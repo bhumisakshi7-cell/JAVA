@@ -1,35 +1,34 @@
 package com.studycse;
 
-import java.util.Arrays;           //facilities for Arrays bcz aage Arrays use hoga      
-import  java.util.Scanner;          // Scanner user se input ke liye hota h
+import java.util.Arrays;               
+import  java.util.Scanner;          
 
-public class Anagram {               // class name
+public class Anagram {               
 	
 	
-	public static void main(String[] args) {            // main method ....program start from this point
-		Scanner sc = new Scanner(System.in);            // scanner = keyboard se input lena h 
-		System.out.println("Enter first string : ");      // print on screen 
-		String str1 = sc.nextLine();                      // store in input or save
+	public static void main(String[] args) {           
+		Scanner sc = new Scanner(System.in);             
+		System.out.println("Enter first string : ");      
+		String str1 = sc.nextLine();                      
 		System.out.println("Enter second string: ");
 		String str2 = sc.nextLine();
 		
-		str1 = str1.replaceAll("\\s"," ").toLowerCase();  //bich me space ho to hata degi aur lowercase(small letter)  bana degi taki
-		                                                  //comparision easy ho
+		str1 = str1.replaceAll("\\s"," ").toLowerCase();  
 		
 		
 		str2 = str2.replaceAll("\\s"," ").toLowerCase();
 		
-		if( str1.length()!= str2.length() ) {                       // length check
+		if( str1.length()!= str2.length() ) {                       
 			System.out.println(" Not Anagrams");
 		}
 		else {
-			char[] a=str1.toCharArray();               //convert into character array bcz sbko ek sath sort nhi kr skta
+			char[] a=str1.toCharArray();              
 			char[] b=str2.toCharArray();
 			
-			Arrays.sort(a);                           //sorting = arranging in alphabet no.
+			Arrays.sort(a);                           
 			Arrays.sort(b);
 			
-			if(Arrays.equals(a, b)) {                 // compare
+			if(Arrays.equals(a, b)) {                 
 				System.out.println("Anagrams");
 			}
 			else {
@@ -37,7 +36,7 @@ public class Anagram {               // class name
 			}
 		}
 		
-		sc.close();                                    // scanner ko band kr deta h
+		sc.close();                                    
 			
 	}
 	
