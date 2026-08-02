@@ -11,12 +11,12 @@ public class Pallindrom {
 
 		        String reversed = "";
 
-		        // Reverse the string
+		       
 		        for (int i = str.length() - 1; i >= 0; i--) {
 		            reversed += str.charAt(i);
 		        }
 
-		        // Check if original and reversed strings are equal
+		       
 		        if (str.equals(reversed)) {
 		            System.out.println("The string is a palindrome.");
 		        } else {
